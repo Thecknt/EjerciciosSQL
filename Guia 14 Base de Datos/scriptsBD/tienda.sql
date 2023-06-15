@@ -1,7 +1,8 @@
 /*DROP DATABASE IF EXISTS tienda;*/
 CREATE DATABASE tienda CHARACTER SET utf8mb4;
 USE tienda;
-/*SET SQL_SAFE_UPDATES=0; para poder guardar un set*/
+*SET SQL_SAFE_UPDATES=0; para poder guardar un set*/
+>>>>>>> 4b3d9febc3c614e0805268d5b8995abe9f3415cb
 CREATE TABLE fabricante (
   codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(100) NOT NULL
@@ -35,6 +36,7 @@ INSERT INTO producto VALUES(7, 'Monitor 27 LED Full HD', 245.99, 1);
 INSERT INTO producto VALUES(8, 'Portátil Yoga 520', 559, 2);
 INSERT INTO producto VALUES(9, 'Portátil Ideapd 320', 444, 2);
 INSERT INTO producto VALUES(10, 'Impresora HP Deskjet 3720', 59.99, 3);
+<<<<<<< HEAD
 INSERT INTO producto VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
 
 SELECT * FROM fabricante;
@@ -206,3 +208,6 @@ FROM producto
 WHERE codigo_fabricante = fabricante.codigo);
 
 						
+=======
+INSERT INTO producto VALUES(11, 'Impresora HP Laserjet Pro M26nw', 180, 3);
+>>>>>>> 4b3d9febc3c614e0805268d5b8995abe9f3415cb
